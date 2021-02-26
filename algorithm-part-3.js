@@ -5,13 +5,6 @@ const dnaDict = {
   G: "C",
 };
 
-function pairElement(str) {
-  const output = [];
+const pairElement = (str) => str.split("").map((c) => [c, dnaDict[c]]);
 
-  for (const c of str) {
-    output.push([c, dnaDict[c]]);
-  }
-  return output;
-}
-
-console.log(pairElement("CTCTA"));
+console.log(pairElement("GCG"));
