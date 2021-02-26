@@ -15,8 +15,3 @@ function pairElement(str) {
 }
 
 console.log(pairElement("CTCTA"));
-
-
-
-
-
